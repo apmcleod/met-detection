@@ -4,7 +4,7 @@ This is the code and data from my 2017 SMC paper. If you use it, please cite it:
 
 ```
 @inproceedings{McLeod:17a,
-  title={Meter Detection in Symbolic Music Using a Lexicalized PCFG},
+  title={Meter Detection in Symbolic Music Using a Lexicalized {PCFG}},
   author={McLeod, Andrew and Steedman, Mark},
   booktitle={Proceedings of the 14th Sound and Music Computing Conference},
   pages={373--379},

@@ -12,9 +12,18 @@ This is the code and data from my 2017 SMC paper. If you use it, please cite it:
 }
 ```
 
+To perform meter detection on live performance (or non-beat-aligned) MIDI, use my [met-align](https://github.com/apmcleod/met-align) package instead.
+
 ## Project Overview
 The goal of this project is to have a Java program which is able to detect the meter of
 a piece from a MIDI file.
+
+NOTE: In order to work well, the notes in the input MIDI files should be split into monophonic voices per MIDI channel. If they are not, the recommended way to do so is to use my [voice-splitting](https://github.com/apmcleod/voice-splitting) package, and run like this:
+
+`$ java -cp bin voicesplitting.voice.hmm.HmmVoiceSplittingTester -w voice FILES`
+(also add `-l` if the files are live performance).
+
+This will create new files with the extension ".voice" added to the end, with voice separation performed. Use these new .voice files as input for meter alignment.
 
 Note that some MIDI files separate voices by channel, while some
 do so by track. This project uses channel by default, but this can be changed by using the

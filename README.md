@@ -12,7 +12,7 @@ This is the code and data from my 2017 SMC paper. If you use it, please cite it:
 }
 ```
 
-To perform meter detection on live performance (or non-beat-aligned) MIDI, use my [met-align](https://github.com/apmcleod/met-align) package instead.
+Use this code to reproduce the results from the paper. For an updated model, see [met-align](https://github.com/apmcleod/met-align), which is also able to perform meter alignment on live performance and unquantized MIDI. (You can still use it with the `-BFromFile` flag to align the results to a 32nd note tatum like in this package, but met-align contains a few other updates as well (see the referenced papers there).
 
 ## Project Overview
 The goal of this project is to have a Java program which is able to detect the meter of
@@ -139,9 +139,8 @@ using it, extending it, or you'd like to see me add any additional features, ple
 email or by submitting an issue on github. Any and all questions are always welcome.
 
 There is a paper which has been accepted to be presented at the 2017 Sound and Music Computing Conference available on
-my [website](http://homepages.inf.ed.ac.uk/s1331854/software.html#MeterDetection) with further documentation.
+my [website](https://apmcleod.github.io/publications.html) with further documentation.
 Please cite this if you use my code or the paper.
 
 Thanks, and enjoy!  
 Andrew McLeod  
-A.McLeod-5@sms.ed.ac.uk

@@ -20,7 +20,7 @@ a piece from a MIDI file.
 
 NOTE: In order to work well, the notes in the input MIDI files should be split into monophonic voices per MIDI channel. If they are not, the recommended way to do so is to use my [voice-splitting](https://github.com/apmcleod/voice-splitting) package, and run like this:
 
-`$ java -cp bin voicesplitting.voice.hmm.HmmVoiceSplittingTester -w voice FILES`
+`$ java -cp bin voicesplitting.voice.hmm.HmmVoiceSplittingModelTester -w voice FILES`
 (also add `-l` if the files are live performance).
 
 This will create new files with the extension ".voice" added to the end, with voice separation performed. Use these new .voice files as input for meter alignment.
